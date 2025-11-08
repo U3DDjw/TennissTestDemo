@@ -1,0 +1,18 @@
+<!--pages/activityDetailsPage/index.wxml-->
+<view class="container">
+  <!-- 图片区域 -->
+  <view class="image-container">
+    <image src="{{activityUrl}}" mode="aspectFill" class="activity-image" />
+  </view>
+
+  <!-- 描述区域 -->
+  <view class="desc-container">
+    <text class="desc-title">活动详情</text>
+    <text class="desc-content">{{activityDesc}}</text>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="button-container">
+    <button type="primary" bindtap="handleSubmit" class="submit-btn">提交报名</button>
+  </view>
+</view>

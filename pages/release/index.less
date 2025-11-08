@@ -1,0 +1,62 @@
+/* pages/release/index.wxss */
+.release-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  box-sizing: border-box;
+  padding-bottom: 200rpx; /* 为底部按钮留出空间 */
+
+  .box {
+    width: 100%;
+    margin-bottom: 30rpx;
+    background: #fff;
+    border-radius: 16rpx;
+    padding: 20rpx;
+    box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+  }
+
+  .form-item {
+    .form-label {
+      font-size: 28rpx;
+      color: #333;
+      margin-bottom: 20rpx;
+      font-weight: bold;
+    }
+    
+    t-input, t-textarea, t-radio-group, t-datetime-picker {
+      width: 100%;
+    }
+    
+    t-textarea {
+      min-height: 200rpx;
+    }
+    
+    t-radio-group {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20rpx;
+    }
+  }
+
+  .upload {
+    height: 200rpx;
+    position: relative;
+    &-class {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .btngroup {
+    position: fixed;
+    bottom: 40rpx;
+    left: 20rpx;
+    right: 20rpx;
+    .btn-class {
+      width: 100%;
+    }
+  }
+}

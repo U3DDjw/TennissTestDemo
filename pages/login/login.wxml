@@ -1,0 +1,36 @@
+<view class="login-container">
+  <!-- 背景装饰元素 -->
+  <view class="login-bg"></view>
+  
+  <!-- 主要内容区域 -->
+  <view class="login-content">
+    <!-- 欢迎标题 -->
+    <view class="welcome-title">
+      <text class="welcome-text">欢迎登录</text>
+      <text class="app-name">没约网球</text>
+    </view>
+    
+    <!-- 登录按钮 -->
+    <view class="login-btn-container">
+      <t-button
+        class="login-btn"
+        theme="primary"
+        size="large"
+        icon="logo-wechat"
+        bindtap="handleWechatLogin"
+      >微信一键登录</t-button>
+    </view>
+    
+    <!-- 协议条款 -->
+    <view class="agreement">
+      <t-checkbox
+        value="{{agreed}}"
+        bindchange="onAgreementChange"
+      ></t-checkbox>
+      <text class="agreement-text">我已阅读并同意</text>
+      <text class="agreement-link">《用户协议》</text>
+      <text class="agreement-text">和</text>
+      <text class="agreement-link">《隐私政策》</text>
+    </view>
+  </view>
+</view>

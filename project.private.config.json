@@ -1,0 +1,68 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "loginCode",
+          "pathName": "pages/loginCode/loginCode",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "my",
+          "pathName": "pages/my/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "info-edit",
+          "pathName": "pages/my/info-edit/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "release",
+          "pathName": "pages/release/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "setting",
+          "pathName": "pages/setting/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "3.10.3",
+  "projectname": "TennisFirstDemo",
+  "setting": {
+    "urlCheck": true,
+    "coverView": true,
+    "lazyloadPlaceholderEnable": false,
+    "skylineRenderEnable": false,
+    "preloadBackgroundData": false,
+    "autoAudits": false,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "showShadowRootInWxmlPanel": true,
+    "useStaticServer": true,
+    "useLanDebug": false,
+    "showES6CompileOption": false,
+    "compileHotReLoad": true,
+    "bigPackageSizeSupport": false,
+    "checkInvalidKey": true,
+    "useIsolateContext": true,
+    "ignoreDevUnusedFiles": true
+  }
+}

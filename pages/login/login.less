@@ -1,0 +1,77 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 0 0 40% 40%;
+}
+
+.login-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60rpx;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-title {
+  margin-bottom: 80rpx;
+  text-align: center;
+}
+
+.welcome-text {
+  display: block;
+  font-size: 40rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.app-name {
+  display: block;
+  font-size: 56rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-btn-container {
+  margin: 60rpx 0;
+}
+
+.login-btn {
+  width: 100%;
+  height: 88rpx;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  --td-button-primary-bg-color: #07c160;
+  --td-button-primary-border-color: #07c160;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+  font-size: 24rpx;
+}
+
+.agreement-text {
+  color: #999;
+  margin: 0 8rpx;
+}
+
+.agreement-link {
+  color: #4facfe;
+}

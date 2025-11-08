@@ -1,0 +1,16 @@
+<view data-weui-theme="{{theme}}">
+  <view class="user-info-container">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+    </button> 
+    <mp-form>
+      <mp-cells>
+          <view class="nickname-row">
+            <text class="nickname-label">昵称：</text>
+            <input wx:if="{{!isAdjustedNickName}}" type="nickname" class="weui-input" placeholder="(小网)点击请修改默认昵称" bindinput="onNicknameInput"/>
+            <text wx:if="{{isAdjustedNickName}}" class="nickname-label">{{nickName}}</text>
+          </view>
+      </mp-cells>
+    </mp-form>
+  </view>
+</view>

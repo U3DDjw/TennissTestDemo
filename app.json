@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/my/index",
+    "pages/activityDetailsPage/index"
+  ],
+  "usingComponents": {
+    "t-toast": "tdesign-miniprogram/toast/toast",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-icon": "tdesign-miniprogram/icon/icon"
+  },
+  "subpackages": [
+    {
+      "root": "pages/my/info-edit",
+      "name": "edit",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "pages/login",
+      "name": "login",
+      "pages": [
+        "login"
+      ]
+    },
+    {
+      "root": "pages/loginCode",
+      "name": "loginCode",
+      "pages": [
+        "loginCode"
+      ]
+    },
+    {
+      "root": "pages/setting",
+      "name": "setting",
+      "pages": [
+        "index"
+      ]
+    },
+    {
+      "root": "pages/release",
+      "name": "release",
+      "pages": [
+        "index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "resolveAlias": {
+    "~/*": "/*"
+  },
+  "sitemapLocation": "sitemap.json"
+}

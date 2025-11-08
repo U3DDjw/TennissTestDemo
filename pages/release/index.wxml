@@ -1,0 +1,33 @@
+<t-navbar title="发布网球比赛" left-arrow />
+<view class="page">
+  <view class="release-container">
+    <view class="upload box">
+      <t-upload t-class="upload-class" media-type="{{['image']}}" files="{{originFiles}}" gridConfig="{{gridConfig}}" bind:success="handleSuccess" bind:remove="handleRemove" max="4" />
+    </view>
+    
+    <view class="form-item box">
+      <view class="form-label">活动详情</view>
+      <t-textarea t-class="desc-class" placeholder="请输入比赛活动详情描述" maxlength="500" value="{{activityDetail}}" bind:change="onDetailChange" />
+    </view>
+    <view class="form-item box">
+      <view class="form-label">人数限制</view>
+      <t-input type="number" placeholder="请输入最大参赛人数" value="{{maxPlayers}}" bind:change="onMaxPlayersChange" />
+    </view>
+    
+    <view class="form-item box">
+      <view class="form-label">比赛类型</view>
+      <t-radio-group value="{{gameType}}" bind:change="onGameTypeChange">
+        <t-radio value="single" label="单打" />
+        <t-radio value="double" label="双打" />
+      </t-radio-group>
+    </view>
+    
+    <view class="form-item box">
+      <view class="form-label">比赛地点</view>
+      <t-cell title="{{location || '请选择比赛地点'}}" hover arrow leftIcon="location" bindtap="gotoMap" />
+    </view>
+    <view class="btngroup box">
+      <t-button t-class="btn-class" theme="primary" icon="upload" content="发布比赛" size="large" bindtap="release"></t-button>
+    </view>
+  </view>
+</view>
